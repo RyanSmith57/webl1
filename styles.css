@@ -1,0 +1,118 @@
+@font-face {
+    font-family: joy;
+    src: url(fonts/TTF.ttf)
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+html {
+    background-image: linear-gradient(black, blue);
+    height: 118vh;
+    font-family: joy;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+}
+
+nav {
+    background-color: #4052e0;
+    border-radius: 0px 20px 20px 0px;
+    border-left: none;
+    margin: 20px 0px;
+}
+
+header img {
+    justify-self: end;
+    align-self: center;
+    margin: 0px 5%;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 0.5fr 30fr 15fr 0.5fr;
+    grid-template-rows: 5fr 10fr 10fr 50fr 50fr 50fr 50fr;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+/* adds a color changing hover state */
+
+
+nav a {
+    font-size: 80px;
+    color: black;
+    text-decoration: underline;
+    font-family: joy;
+    margin: 0px 3%;
+}
+
+section {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: auto;
+    padding: 20px;
+    background-color: black;
+}
+
+.promo {
+    width: 90%;
+    justify-content: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+/* promo is what i have named the grid box */
+
+.line {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-right: 2px solid white;
+
+}
+
+.right {
+    display: grid;
+    grid-template-rows: auto auto;
+    margin: 10px;
+}
+
+
+ul {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+ul li img {
+    width: 100%;
+}
+
+/* sets the size of the images in shop */
+
+li h1,
+p {
+    color: white;
+}
+
+section h1 {
+    color: white;
+}
+
+/* sets the text in contact to white */
+
+.right img {
+    width: 100%;
+}
